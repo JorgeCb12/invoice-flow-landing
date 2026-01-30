@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50  bg-dark-900/60 backdrop-blur-md">
-      <div className="container mx-auto px-6 md:px-6 h-16 border-b-2 border-white/10 flex items-center justify-between">
+      <div className="container mx-auto px-6 md:px-6 h-16 flex items-center justify-between">
         <div className="flex items-center justify-center gap-1 cursor-pointer hover:opacity-80 transition-opacity">
           <img src={img} alt="Logo" className="w-6 h-6" />
           <h1 className="text-xl text-white">
@@ -34,13 +34,13 @@ const Header = () => {
             href="#"
             className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
-            Pricing
+            Testimonies
           </a>
           <a
             href="#"
             className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
-            Resources
+            Pricing
           </a>
         </nav>
 
@@ -80,13 +80,13 @@ const Header = () => {
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Pricing
+              Testimonies
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Resources
+              Pricing
             </a>
           </nav>
           <hr className="border-white/10" />

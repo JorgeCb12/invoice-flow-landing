@@ -8,9 +8,9 @@ const SocialProof = () => {
   ];
 
   return (
-    <section className="pt-12 pb-20 border-b-2 border-white/5 container mx-auto bg-dark-900">
+    <section className="pt-12 pb-20 container mx-auto bg-dark-900">
       <div className="container mx-auto px-4 text-center">
-        <p className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase mb-8">
+        <p className="text-gray-500 text-xs md:text-sm lg:text-xl font-bold tracking-[0.2em] uppercase mb-8">
           Trusted by innovative teams
         </p>
 

@@ -1,46 +1,48 @@
-import img from "../assets/resources/image.png";
+import img from "../assets/resources/image.svg";
 
 const Hero = () => {
   return (
-    <section className="min-h-[85vh] pt-32 ">
-      <div className="container relative overflow-hidden mx-auto h-full px-2 md:px-6 flex items-start justify-between">
-        <div className="flex  flex-col py-10 md:flex-row items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-          <div className="absolute z-0 top-1/3 left-1/1 transform -translate-x-1/2 -translate-y-1/2 w-46 h-46 bg-linear-to-r from-white/10 shadow-2xl to-brand-600 blur-3xl rounded-full flex items-center justify-center"></div>
-          <div className="absolute z-0 top-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 w-46 h-46 bg-linear-to-r from-white/10 shadow-2xl to-brand-600 blur-3xl rounded-full flex items-center justify-center"></div>
-          <div className="flex flex-col gap-2 px-4 py-2">
-            <h1 className="text-4xl font-medium max-w-[320px] text-center md:text-left">
-              <span className="font-medium ">AUTOMATIZA TUS </span>
-              <span className="font-semibold text-brand-600 tracking-wider">
-                INGRESOS
-              </span>
-            </h1>
-            <p className="bg-linear-to-r py-2 tracking-wider text-gray-400 text-base text-center md:text-left">
-              CONCENTRÁTE EN TU{" "}
-              <span className="font-semibold text-brand-600">CÓDIGO</span>.
-            </p>
-          </div>
-          <div>
-            <p className="text-gray-300 text-base font-light text-center max-w-[300px] md:text-left py-2 relative z-10">
-              El sistema operativo financiero todo en uno para freelancers y
-              agencias. Crear facturas, registrar los gastos y gestionar los
-              clientes en segundos, no en horas.
-            </p>
-          </div>
-          <div className="flex gap-2 py-4 relative z-10">
-            <button className="bg-linear-to-r from-brand-600 to-brand-900 text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-brand-500 transition-all shadow-lg shadow-brand-500/20">
-              EMPIEZA GRATIS
-            </button>
-            <button className="bg-black/5 border border-white/10 text-white text-sm font-medium px-5 py-1 rounded-full hover:bg-black-500 transition-all shadow-lg shadow-black-500/20">
-              VER DEMO
-            </button>
-          </div>
-          <div className="py-4 px-1 w-full">
-            <img
-              src={img}
-              alt="Preview del dashboard"
-              className="rounded-lg w-full max-h-[250px] object-cover"
-            />
-          </div>
+    <section className="relative pt-32 pb-20 overflow-hidden bg-dark-900 min-h-screen flex flex-col justify-center">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand-600/30 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
+        <div className="max-w-4xl mx-auto flex flex-col gap-4 mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+            AUTOMATIZA TUS <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-400 to-brand-600">
+              INGRESOS
+            </span>
+          </h1>
+
+          <p className="text-base md:text-xl lg:text-2xl text-brand-200 font-medium tracking-wide uppercase opacity-90">
+            Concéntrate en tu código.
+          </p>
+        </div>
+
+        <p className="text-gray-400 text-sm md:text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
+          El sistema operativo financiero todo en uno para freelancers y
+          agencias. Crea facturas, registra gastos y gestiona clientes en
+          segundos.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 mb-16 w-[200px] sm:w-auto">
+          <button className="bg-brand-600 text-white font-medium py-2 px-6 rounded-full hover:bg-brand-500 transition-all shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] cursor-pointer">
+            EMPIEZA GRATIS
+          </button>
+          <button className="border border-white/10 bg-white/5 text-white font-medium py-2 px-6 rounded-full hover:bg-white/10 transition-all backdrop-blur-sm cursor-pointer">
+            VER DEMO
+          </button>
+        </div>
+
+        <div className="relative w-full max-w-5xl ">
+          <div className="absolute -inset-1 bg-linear-to-r from-brand-500 to-blue-500 rounded-2xl opacity-20 blur-lg"></div>
+
+          <img
+            src={img}
+            alt="Dashboard Preview"
+            className="relative rounded-lg px-4 py-2 border border-white/10 shadow-xl w-full bg-dark-900 object-cover"
+          />
         </div>
       </div>
     </section>

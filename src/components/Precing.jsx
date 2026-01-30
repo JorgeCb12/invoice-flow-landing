@@ -42,18 +42,20 @@ const Precing = () => {
       button: "Contactar ventas",
       bgClass: "bg-brand-600",
       popular: false,
+      gridSpan: "md:col-span-2 lg:col-span-1",
     },
   ];
+
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-8 py-4">
+    <section className="py-12 lg:px-20 xl:px-20  px-4">
+      <div className="container mx-auto px-4 py-4">
         <h2 className="text-2xl font-bold text-white text-center">
           PLANES SIMPLES PARA{" "}
           <span className="text-brand-500">CRECER CONTIGO</span>
         </h2>
       </div>
-      <div className="container mx-auto px-8 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="container mx-auto xl:px-20 px-4 md:px-8 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {plans.map((plan) => (
             <PrecingCard key={plan.id} plan={plan} />
           ))}

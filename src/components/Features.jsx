@@ -29,21 +29,29 @@ const Features = () => {
     },
   ];
   return (
-    <section>
-      <div className="container mx-auto px-8 py-12 flex flex-col gap-6 border-b-2 border-white/5">
+    <section className="lg:px-10 xl:px-10 px-4">
+      <div className="container mx-auto px-4 2xl:px-20 py-12 flex flex-col gap-6">
         <h2 className="text-center text-3xl font-bold text-white tracking-wider">
           CARACTERÍSTICAS
         </h2>
         <p className="text-center text-brand-600">TODO LO QUE NECESITAS</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {cards.map((item) => (
-            <Card
+          {cards.map((item, index) => (
+            <div
               key={item.id}
-              title={item.title}
-              description={item.description}
-              icon={<item.icon size={26} />}
-              color={item.color}
-            />
+              className={
+                index === 2
+                  ? "md:col-span-2 md:px-20 lg:px-0 lg:col-span-1 md:flex md:justify-center"
+                  : ""
+              }
+            >
+              <Card
+                title={item.title}
+                description={item.description}
+                icon={<item.icon size={26} />}
+                color={item.color}
+              />
+            </div>
           ))}
         </div>
       </div>
