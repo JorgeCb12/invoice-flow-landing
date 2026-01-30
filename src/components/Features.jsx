@@ -31,10 +31,9 @@ const Features = () => {
   return (
     <section className="lg:px-10 xl:px-10 px-4">
       <div className="container mx-auto px-4 2xl:px-20 py-12 flex flex-col gap-6">
-        <h2 className="text-center text-3xl font-bold text-white tracking-wider">
-          CARACTERÍSTICAS
+        <h2 className="text-center text-3xl font-bold py-6 text-white tracking-wider">
+          TODO LO QUE NECESITAS PARA CRECER
         </h2>
-        <p className="text-center text-brand-600">TODO LO QUE NECESITAS</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {cards.map((item, index) => (
             <div

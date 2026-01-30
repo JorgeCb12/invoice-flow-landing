@@ -9,28 +9,29 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
         <div className="max-w-4xl mx-auto flex flex-col gap-4 mb-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
-            AUTOMATIZA TUS <br className="hidden md:block" />
+            AUTOMATIZA TU {""}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-brand-400 to-brand-600">
-              INGRESOS
+              FACTURACIÓN
             </span>
           </h1>
 
           <p className="text-base md:text-xl lg:text-2xl text-brand-200 font-medium tracking-wide uppercase opacity-90">
-            Concéntrate en tu código.
+            Concéntrate en tu{" "}
+            <span className="text-brand-600 font-bold">TRABAJO.</span>
           </p>
         </div>
 
         <p className="text-gray-400 text-sm md:text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
-          El sistema operativo financiero todo en uno para freelancers y
-          agencias. Crea facturas, registra gastos y gestiona clientes en
-          segundos.
+          Crea facturas, registra gastos y administra clientes desde una sola
+          plataforma, diseñada para equipos pequeños y profesionales
+          independientes.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-16 w-[200px] sm:w-auto">
           <button className="bg-brand-600 text-white font-medium py-2 px-6 rounded-full hover:bg-brand-500 transition-all shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] cursor-pointer">
-            EMPIEZA GRATIS
+            PROBAR GRATIS
           </button>
-          <button className="border border-white/10 bg-white/5 text-white font-medium py-2 px-6 rounded-full hover:bg-white/10 transition-all backdrop-blur-sm cursor-pointer">
+          <button className="border border-white/10 bg-white/5 text-white font-light py-2 px-6 rounded-full hover:bg-white/10 transition-all backdrop-blur-sm cursor-pointer">
             VER DEMO
           </button>
         </div>

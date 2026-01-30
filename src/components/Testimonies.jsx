@@ -27,7 +27,8 @@ const Testimonies = () => {
   return (
     <section className="container mx-auto px-6 lg:px-10 2xl:px-20 py-16">
       <span className="text-white text-2xl font-bold block mb-8 text-center">
-        LOVED BY FREELANCERS <span className="text-brand-500">WORLDWIDE</span>
+        LA HERRAMIENTA FAVORITA DE LOS{" "}
+        <span className="text-brand-600">FREELANCERS</span>
       </span>
       <div className="gap-8 p-2 rounded-lg md:max-w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full items-center justify-center gap-4">

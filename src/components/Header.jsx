@@ -10,10 +10,12 @@ const Header = () => {
       <div className="container mx-auto px-6 md:px-6 h-16 flex items-center justify-between">
         <div className="flex items-center justify-center gap-1 cursor-pointer hover:opacity-80 transition-opacity">
           <img src={img} alt="Logo" className="w-6 h-6" />
-          <h1 className="text-xl text-white">
+          <h1 className="text-xl font-medium tracking-tight text-white">
             Invoice
-            <span className="text-brand-600 font-medium">Flow</span>
-            <span className="text-white">.</span>
+            <span className="text-brand-600 text-xl font-bold tracking-tight">
+              Flow
+            </span>
+            <span className="text-white text-xl font-medium">.</span>
           </h1>
         </div>
 
@@ -22,34 +24,28 @@ const Header = () => {
             href="#"
             className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
-            Home
+            Inicio
           </a>
           <a
             href="#"
             className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
-            Features
+            Producto
           </a>
           <a
             href="#"
             className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
-            Testimonies
-          </a>
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
-          >
-            Pricing
+            Precios
           </a>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
           <button className="text-sm font-medium text-white hover:text-brand-300 transition-colors">
-            Login
+            Entrar
           </button>
           <button className="bg-brand-600 text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-brand-500 transition-all shadow-lg shadow-brand-500/20">
-            Get Started
+            Probar gratis
           </button>
         </div>
 
@@ -68,34 +64,28 @@ const Header = () => {
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Home
+              Inicio
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Features
+              Producto
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Testimonies
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Pricing
+              Precios
             </a>
           </nav>
           <hr className="border-white/10" />
           <div className="flex flex-col gap-3">
             <button className="text-gray-400 hover:text-white font-medium cursor-pointer">
-              Login
+              Entrar
             </button>
             <button className="bg-brand-600 text-white font-medium py-2 rounded-lg hover:bg-brand-500 cursor-pointer">
-              Get Started
+              Probar gratis
             </button>
           </div>
         </div>

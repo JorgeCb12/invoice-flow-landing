@@ -11,10 +11,10 @@ const SocialProof = () => {
     <section className="pt-12 pb-20 container mx-auto bg-dark-900">
       <div className="container mx-auto px-4 text-center">
         <p className="text-gray-500 text-xs md:text-sm lg:text-xl font-bold tracking-[0.2em] uppercase mb-8">
-          Trusted by innovative teams
+          Confiado por equipos innovadores
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50 grayscale transition-all hover:opacity-100 hover:grayscale-0 cursor-default">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0 cursor-default">
           {logos.map((logo) => (
             <h3
               key={logo.name}

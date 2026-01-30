@@ -5,7 +5,7 @@ const Footer = () => {
   const sections = [
     {
       title: "Producto",
-      links: ["Features", "Pricing", "API", "Integraciones"],
+      links: ["Características", "Precios", "API", "Integraciones"],
     },
     {
       title: "Compañía",
@@ -21,8 +21,8 @@ const Footer = () => {
     <footer className="relative  px-4 bg-dark-900 border-t border-white/5 pt-16 pb-8 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[2px] bg-linear-to-r from-transparent via-brand-500/50 to-transparent"></div>
 
-      <div className="container mx-auto px-4 xl:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="px-4 md:p-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:text-center gap-10 mb-16">
           <div className="md:col-span-1 flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <img
@@ -34,7 +34,7 @@ const Footer = () => {
                 Invoice<span className="text-brand-500">Flow</span>.
               </span>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-start text-gray-400 leading-relaxed">
               La plataforma definitiva para freelancers que quieren automatizar
               sus finanzas y recuperar su tiempo libre.
             </p>

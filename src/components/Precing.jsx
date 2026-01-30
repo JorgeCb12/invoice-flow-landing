@@ -47,7 +47,7 @@ const Precing = () => {
   ];
 
   return (
-    <section className="py-12 lg:px-20 xl:px-20  px-4">
+    <section className="py-12 lg:px-10 xl:px-10  px-4">
       <div className="container mx-auto px-4 py-4">
         <h2 className="text-2xl font-bold text-white text-center">
           PLANES SIMPLES PARA{" "}
